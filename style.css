@@ -1,0 +1,78 @@
+body {
+  background: #f0f4f8;
+  font-family: "Segoe UI", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.mode-select {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+#status {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #0077b6;
+  min-height: 1.5em;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.cell {
+  background: #e9ecef;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  color: #22223b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+  user-select: none;
+  font-weight: bold;
+}
+.cell:hover {
+  background: #bde0fe;
+}
+.cell.winner {
+  background: #90e0ef;
+  color: #0077b6;
+}
+
+#restart {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#restart:hover {
+  background: #023e8a;
+}
