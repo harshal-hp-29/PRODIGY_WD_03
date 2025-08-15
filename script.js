@@ -131,3 +131,4 @@ restartBtn.addEventListener("click", restartGame);
 // Initial render
 renderBoard();
 statusElement.textContent = `Player X's turn`;
+
